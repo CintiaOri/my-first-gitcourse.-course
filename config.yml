@@ -1,0 +1,16 @@
+title: My first Gitcourse.
+description: 'Pythoning a code, for the first time.'
+template:
+  repo: my-first-gitcourse.-template
+  name: my-first-gitcourse.
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
